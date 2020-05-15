@@ -4,7 +4,7 @@
  * @Author: qiaoyurensheng@163.com
  * @Date: 2020-05-14 23:51:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-15 20:45:16
+ * @LastEditTime: 2020-05-15 22:47:22
  */
 $(function () {
     // 当前屏幕高度
@@ -54,6 +54,30 @@ $(function () {
                 });
                 $(".cover").show();
                 $("pic3_4").show();
+
+            }
+
+            if (index == 3 && nextIndex == 4) {
+                $(".pic2-3_4").hide();
+                // 当3屏->4屏，沙发向下第四屏 
+                $(".pic4_1").show().animate({ "bottom": -((h - 250) + 50), "left": 260 }, 2000, function () {
+                    //动画做完，自动隐藏
+                    $(this).hide();
+                    $(".pic4_1_1").show();
+                    //购物车右移
+                    $(".car").animate({ "left": 2000 }, 3000, function () {
+                        //顶上字改变
+                        $(".pic4_4").animate({ "opacity": 1 }, 1000, function () {
+                            //收件卡片出现
+                            $(".pic4_5").animate({ "opacity": 1 }, 500, function () {
+                                //收件联系人卡片出现
+                                $(".pic4_6").animate({ "opacity": 1 }, 500)
+                            })
+
+                        })
+                    })
+                });
+
 
             }
         }

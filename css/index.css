@@ -4,7 +4,7 @@
  * @Author: qiaoyurensheng@163.com
  * @Date: 2020-05-14 23:54:23
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-15 20:34:09
+ * @LastEditTime: 2020-05-15 22:46:38
  */ 
 #fp-nav ul li a span{
     /* 更改导航项参数 */
@@ -110,10 +110,11 @@
     display: none;
 }
 
-/* 第二屏 */
+/* 第三屏 */
 
 .section3{
     background: #ef674d;
+    z-index: 1;
 }
 .main{
     width: 700px;
@@ -138,7 +139,7 @@
     bottom: 10px;
 }
 /* 沙发 */
-.pic3_4{
+.pic3_4,.pic4_1{
     position: absolute;
     left: 115px;
     bottom: 200px;
@@ -154,10 +155,70 @@
 .pic3_3_2{
     opacity: 0;
 }
-
+/* 第四屏 */
 .section4{
     background: #fed url(../img/4.png) no-repeat center bottom;
 }
+.pic4_2{
+    position: absolute;
+    left: 50%;
+    bottom: 550px;
+}
+.pic4_3
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 500px;
+}
+.pic4_4
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 500px;
+    opacity: 0;
+}
+.car{
+width: 500px;
+position: absolute;
+/* background-color: pink; */
+bottom: 50px;
+left: 50%;
+transform: translateX(-50%);
+z-index: 9;
+}
+.pic4_1_1{
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);z-index: -1;
+    display: none;
+}
+.section4 .pic4_5{
+    position: absolute;
+    bottom:216px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.section4 .pic4_6{
+    position: absolute;
+    bottom:380px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9; 
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
 .section5{
     background: #d04759 url(../img/5.png);
 }
@@ -208,4 +269,20 @@ z-index: 99;
         bottom: 336px;
     }
 
+}
+.cloud{
+    animation: cloud 30s infinite;
+}
+
+@keyframes cloud{
+    0%{left: 50%;}
+    33%{
+        left: 20%;
+    }
+    66%{
+        left: 70%;
+    }
+    100%{
+        left: 50%;
+    }
 }
