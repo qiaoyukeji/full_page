@@ -4,7 +4,7 @@
  * @Author: qiaoyurensheng@163.com
  * @Date: 2020-05-14 23:54:23
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-15 13:37:44
+ * @LastEditTime: 2020-05-15 20:34:09
  */ 
 #fp-nav ul li a span{
     /* 更改导航项参数 */
@@ -144,8 +144,16 @@
     bottom: 200px;
     display: none;
 }
-
-
+.pic3_2{
+    position: absolute;
+    
+}
+.pic3_2_2{
+    opacity: 0;
+}
+.pic3_3_2{
+    opacity: 0;
+}
 
 .section4{
     background: #fed url(../img/4.png) no-repeat center bottom;

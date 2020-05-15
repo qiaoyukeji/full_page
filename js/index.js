@@ -4,7 +4,7 @@
  * @Author: qiaoyurensheng@163.com
  * @Date: 2020-05-14 23:51:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-15 13:53:05
+ * @LastEditTime: 2020-05-15 20:45:16
  */
 $(function () {
     // 当前屏幕高度
@@ -47,7 +47,11 @@ $(function () {
         onLeave: function (index, nextIndex, direction) {
             if (index == 2 && nextIndex == 3 && flag == true) {
                 // 当2屏->3屏，沙发向下第三屏 
-                $(".pic2-3_4").show().animate({ "bottom": -(h - 250), "width": 207, "left": 260 }, 1500);
+                $(".pic2-3_4").show().animate({ "bottom": -(h - 250), "width": 207, "left": 260 }, 1500, function () {
+                    $(".pic3_2_2").animate({ "opacity": 1 }, 500, function () {
+                        $(".pic3_3_2").animate({ "opacity": 1 }, 1000)
+                    });
+                });
                 $(".cover").show();
                 $("pic3_4").show();
 
