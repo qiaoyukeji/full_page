@@ -4,7 +4,7 @@
  * @Author: qiaoyurensheng@163.com
  * @Date: 2020-05-14 23:54:23
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-15 02:31:26
+ * @LastEditTime: 2020-05-15 13:37:44
  */ 
 #fp-nav ul li a span{
     /* 更改导航项参数 */
@@ -35,6 +35,7 @@
 /* 第二屏 */
 .section2{
     background: #84a2d4 url(../img/2.png) no-repeat center bottom;
+    z-index:9;
 }
 .computer{
     width: 990px;
@@ -90,13 +91,62 @@
     bottom: 550px;
     opacity: 0;
 }
+/* 沙发 */
+.pic2-3_4{
+    position: absolute;
+    left: 395px;
+    bottom: 344px;
+    width: 100px;
+    display:none;
+}
+.cover{
+    position: absolute;
+    left: 394px;
+    bottom: 344px;
+    width: 102px;
+    height: 80px;
+    background-color: #fff;
+    z-index: 9;
+    display: none;
+}
 
-
-
+/* 第二屏 */
 
 .section3{
     background: #ef674d;
 }
+.main{
+    width: 700px;
+    height: 500px;
+    /* background-color: pink; */
+    background: url(../img/3-1.png) no-repeat center center;
+    position: absolute;
+   left: 50%;
+   bottom: 50px;
+    transform: translateX(-50%);
+}
+.select{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    /* background-color: pink; */
+}
+.pic3_3{
+    position: absolute;
+    bottom: 10px;
+}
+/* 沙发 */
+.pic3_4{
+    position: absolute;
+    left: 115px;
+    bottom: 200px;
+    display: none;
+}
+
+
+
 .section4{
     background: #fed url(../img/4.png) no-repeat center bottom;
 }
